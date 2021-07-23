@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/forecastFragmentPage">
+
+    <fragment
+        android:id="@+id/forecastFragmentPage"
+        android:name="com.rednerracaza.weatherapp.view.forecast.WeatherForecastFragment"
+        android:label="Weather Forecast"
+        tools:layout="@layout/fragment_forecast">
+        <action
+            android:id="@+id/action_forecastPage_to_forecastDetailsPage"
+            app:destination="@id/forecastDetailsFragmentPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/forecastDetailsFragmentPage"
+        android:name="com.rednerracaza.weatherapp.view.details.WeatherForecastDetailsFragment"
+        android:label="Weather Forecast"
+        tools:layout="@layout/fragment_forecast_details"
+        >
+        <argument
+            android:name="weatherForecastCityId"
+            app:argType="string"
+            />
+    </fragment>
+</navigation>

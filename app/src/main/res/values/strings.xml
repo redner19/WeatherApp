@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="formattedTemperature">%1$s°C</string>
+    <string name="formattedTemperatureHighLow">High %1$s / Low %2$s</string>
+    <string name="noDecimal">%.0f</string>
+    <string name="singleDecimal">%.1f</string>
+
+    <string name="weather_forecast_no_connection">No connection is available.</string>
+    <string name="weather_forecast_http_error">An api error has occurred.</string>
+    <string name="weather_forecast_something_wrong">Something is wrong. Please try again.</string>
+</resources>
